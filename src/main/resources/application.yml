@@ -1,0 +1,13 @@
+server:
+  port: 81
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/jpa-demo?useSSL=false
+    username: root
+    password: 123456
+  jpa:
+    show-sql: true
+    hibernate:
+      # ddl-auto: create # DDL-AUTO 设置自动表定义，自动创建表结构
+      ddl-auto: update
