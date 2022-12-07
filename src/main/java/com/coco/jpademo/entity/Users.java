@@ -18,4 +18,11 @@ public class Users {
 
     @Column(name = "password")
     private String password;
+
+    /**
+     * 添加外键关联
+     */
+    @JoinColumn(name = "detail_id")
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL) //关联关系，ALL：所有操作设置关联
+    private UsersDetail usersDetail;
 }
