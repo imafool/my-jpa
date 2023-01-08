@@ -3,7 +3,7 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/jpa-demo?useSSL=false
+    url: jdbc:mysql://localhost:3306/my_spring_data?useSSL=false
     username: root
     password: 123456
   jpa:
